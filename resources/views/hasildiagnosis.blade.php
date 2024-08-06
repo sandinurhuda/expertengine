@@ -3,15 +3,15 @@
 @section('container')
 
 <div class="row">
-    <!-- /.col -->
     <div class="col-md-12">
         <div class="form-group">
             <label>Hasil Diagnosis:</label>
-            <h1><strong>ACCU LEMAH</strong></h1>
+            @foreach($namaKerusakan as $nk)
+                <h1><strong>{{ $nk }}</strong></h1>
+            @endforeach
         </div>
-        <button type="button" class="btn btn-block btn-default">Kembali ke Halaman Diagnosis</button>
+        <a href="/diagnosis" class="btn btn-block btn-default">Kembali ke Halaman Diagnosis</a>
     </div>
-              <!-- /.col -->
 </div>
 
 @endsection

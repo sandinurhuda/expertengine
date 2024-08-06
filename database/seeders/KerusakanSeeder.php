@@ -6,45 +6,45 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class PenyakitSeeder extends Seeder
+class KerusakanSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('penyakits')->insert([
+        DB::table('kerusakans')->insert([
             [
                 'kode' => 'KR01',
-                'nama_penyakit' => 'Accu Lemah'
+                'nama_kerusakan' => 'Accu Lemah'
             ],
             [
                 'kode' => 'KR02',
-                'nama_penyakit' => 'Busi Lemah'
+                'nama_kerusakan' => 'Busi Lemah'
             ],
             [
                 'kode' => 'KR03',
-                'nama_penyakit' => 'Filter Udara Kotor'
+                'nama_kerusakan' => 'Filter Udara Kotor'
             ],
             [
                 'kode' => 'KR04',
-                'nama_penyakit' => 'Throttle Body Kotor'
+                'nama_kerusakan' => 'Throttle Body Kotor'
             ],
             [
                 'kode' => 'KR05',
-                'nama_penyakit' => 'Celah Klep Longgar'
+                'nama_kerusakan' => 'Celah Klep Longgar'
             ],
             [
                 'kode' => 'KR06',
-                'nama_penyakit' => 'TPS Error'
+                'nama_kerusakan' => 'TPS Error'
             ],
             [
                 'kode' => 'KR07',
-                'nama_penyakit' => 'Injektor Tersumbat'
+                'nama_kerusakan' => 'Injektor Tersumbat'
             ],
             [
                 'kode' => 'KR08',
-                'nama_penyakit' => 'ECM Mati'
+                'nama_kerusakan' => 'ECM Mati'
             ],
         ]);
     }

@@ -2,6 +2,6 @@
 
 @section('container')
 
-<h1>OK riwayat</h1>
+<h1></h1>
 
 @endsection

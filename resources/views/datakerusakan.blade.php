@@ -17,14 +17,14 @@
                     </tr>
                   </thead>
                   <tbody>
-                  	@foreach($penyakits as $p)
+                  	@foreach($kerusakans as $k)
                     <tr>
                       <td>{{ $loop->iteration }}</td>
-                      <td>{{ $p->kode }}</td>
-                      <td>{{ $p->nama_penyakit }}</td>
+                      <td>{{ $k->kode }}</td>
+                      <td>{{ $k->nama_kerusakan }}</td>
                       <td>
                       	<ul>
-                      		@foreach($p->gejalas as $g)
+                      		@foreach($k->gejalas as $g)
                       		<li>{{ $g->kode }} - {{ $g->nama_gejala }}</li>
                       		@endforeach
                       	</ul>

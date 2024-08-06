@@ -32,4 +32,5 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 // universal
 Route::get('/diagnosis', [DiagnosisController::class, 'index'])->name('diagnosis');
+Route::post('/submitdiagnosis', [DiagnosisController::class, 'submitDiagnosis'])->name('submitdiagnosis');
 Route::get('/hasildiagnosis', [DiagnosisController::class, 'hasildiagnosis'])->name('hasildiagnosis');
